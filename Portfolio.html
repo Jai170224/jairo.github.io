@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+
+  <header>
+    <h1>This is my portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-text">
+      <h2>Hello, I'm Jairo Eusebio 👋</h2>
+      <p>As a Grade 11 student, I’m passionate about programming, learning new technologies, and turning ideas into real projects through code.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <img src="BUTTERFLY.jpg" alt="Profile Picture">
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Jairo, a Grade 11 student who loves programming. I enjoy creating websites using HTML, CSS, and a bit of Java. I like learning new things about web design and improving my coding skills by trying different projects.</p>
+  </section>
+
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 50%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 45%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="DASH.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>This is my project one Doing a Dashboard about school.</p>
+      </div>
+      <div class="project-card">
+        <img src="PASSED.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>And also A average activity using html code.</p>
+      </div>
+      <div class="project-card">
+        <img src="portport.jpg" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>And lastly ofc we have this portfolio project about my self by using a Html and combined with css.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="text-align: center;">
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-row"> 
+        <a href="https://www.facebook.com/jairowichie.eusebio?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="btn-contact fb">Facebook</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+
+
+  <footer>
+    <p>© 2026 Jairo| Designed using HTML & CSS</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! I will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
