@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<div>
+<p id="output"></p>
+<script>
+
+   let name = " Jairo Eusebio";
+   let g1 = 75;
+   let g2 = 75;
+   let g3 = 75;
+   let g4 = 75;
+   let average = (g1 + g2 + g3 + g4) / 4;
+
+   let remark;
+
+   if (average >= 75) {
+       remark = "passed!";
+   } else {
+       remark = "failed!";
+   }
+
+   document.getElementById("output").innerHTML = 
+     "Name: " + name + "<br>" +
+     "1st grading: " + g1 + "<br>" +
+     "2nd grading: " + g2 + "<br>" +
+     "3rd grading: " + g3 + "<br>" +
+     "4th grading: " + g4 + "<br>" +
+     "Total Average: " + average + "<br>" +
+     "Remark: " + remark;
+
+</script>
+</div>
+
+</body>
+</html>
